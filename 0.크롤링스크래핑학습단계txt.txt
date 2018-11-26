@@ -1,0 +1,39 @@
+1. 크롤링 데이터를 어떤 포멧으로 관리 할 것인가?
+    - 데이터 피터링 기술 필수
+
+    1. 일반 text 파일로 생성 및 저장 관리
+       1. csv
+       2. json 
+    2. db에 저장 해서 보관
+       1. RDBMS
+           oracle/mysql/ms sql/db2/postgred..
+           sqlite3
+           - 특징
+               : 데이터 설계된 구조에 맞게 매우 잘 정제된 포멧
+       2. nosql
+           mongoDB 
+           - 특징
+               {"key1": "value1", "key2": "value2", ...}
+               java script의 JSON 포멧
+               python dict
+
+2. 실습 단계 
+   1. 단순 데이터 포멧 연습 
+    01.basic
+    02.database
+    03.crawlerBaxic
+        1.robots.txt 파싱
+        2. 상대 / 절대 url 가공 연습
+        3. 정규표현식으로 한빛사이트 크롤링 & 스크래핑
+    04.crawler
+        1. 단계별 퍼머링크 사용 연습
+        2. 여러 page를 지속적으로 크롤링
+            - session 
+        3. 특정 사이트 통으로 크롤링(05단계에서 할수도)
+            - http://www.python.org
+    05. bs4 API 활용
+    06. selenium API 활용
+        - 브라우저를 활용해서 크롤링
+        - 브라우저 드라이버들
+    07. OPEN API
+        - 유튜브 API
