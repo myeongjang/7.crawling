@@ -53,8 +53,8 @@ def save():
         json.dump(x, fp=f, ensure_ascii=True)
 def view():
     with open("data.json","r",encoding="utf-8-sig") as f:
-        #data = f.read()
-        #print("##1. read() 함수로 read한 데이터 타입 ##", type(data))
+        data = f.read()
+        print("##1. read() 함수로 read한 데이터 타입 ##", type(data))
 
         data = json.loads(data)
 
