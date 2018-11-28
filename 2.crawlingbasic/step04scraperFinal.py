@@ -82,7 +82,7 @@ def scrape(html):
     books = []
     for partial_html in re.findall(r'<td class="left"><a.*?</td>', html, re.DOTALL):
 
-        print(partial_html)
+        print(partial_html,'partial')
     
         url = re.search(r'<a href="(.*?)">',partial_html).group(1)
         url = 'http://www.hanbit.co.kr' + url

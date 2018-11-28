@@ -10,11 +10,11 @@
        - robotparser
 
 '''
-'''
+
 import urllib.robotparser
 
 rp = urllib.robotparser.RobotFileParser()
-
+'''
 rp.set_url("htpp://wikibook.co.kr/robots.txt")
 rp.read()
 data = rp.can_fetch("mybot","http://wikibook.co.kr/")
