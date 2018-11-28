@@ -32,7 +32,7 @@ if __name__ == '__main__':
   youtubeAnalytics = get_service()
   execute_api_request(
       youtubeAnalytics.reports().query,
-      ids='channel==MINE',
+      ids='BTS',
       startDate='2017-01-01',
       endDate='2017-12-31',
       metrics='estimatedMinutesWatched,views,likes,subscribersGained',
