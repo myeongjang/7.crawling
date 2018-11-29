@@ -96,7 +96,6 @@ def scrape_detail_page2(response):
       re.sub('\s+', ' ', 데이터)
 
 '''
-def normalize_space(s):
-    return re.sub(r'\s+', ' ', s).strip()
+
 if __name__ == "__main__":
     main()
