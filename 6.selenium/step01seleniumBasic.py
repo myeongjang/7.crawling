@@ -40,4 +40,4 @@ def naverConan(question):
     driver.find_element_by_xpath("//*[@id=\"search_btn\"]").click()
 
 if __name__ == "__main___":
-runDriver("https://www.naver.com/")
+     runDriver("https://www.naver.com/")
