@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    </head>
+    <body>
+        <input type='text' id='dataInput'/><br>
+        <i class='far fa-grin-tongue-squint'
+             style='font-size:48px;color:red' onclick="alert(1)"></i>
+        
+        <button onclick="">
+        <hr>
+        <div id="message"></div>
+
+        <script>
+            //input tag에 입력된 데이터 획득 -> 비교 -> div에 출력
+            function dataCheck(v){
+                v = document.getElementById("dataInput").value;
+                if(v == 'encore'){
+                    document.getElementById("message").innerHTML
+                    = '<b>encore 입니다.</b>'
+               }else{
+                   document.getElementById("message").innerHTML
+                   ='<b>encore가 아닙니다<b>'
+                }
+            
+            }
+
+    </body>
+</html>
+
+<!--
+1. input tag : 입력 창(input tag, text field)
+2. button : 검색 값을 보유한 버튼
+          : click시에 입력된 데이터값을 인수로 해서 js 함수 호출
+3. 입력 받은 데이터 encore라면 안녕하세요 출력
+                    encore가 아니면 "어디서 온거니?" 출력
+                    - div 
+- 크롤링 & 스크래핑 기술로 3번 처리
+-->>

@@ -39,5 +39,9 @@ def naverConan(question):
     conan.send_keys(question)
     driver.find_element_by_xpath("//*[@id=\"search_btn\"]").click()
 
+def searching():
+    
+
+
 if __name__ == "__main___":
      runDriver("https://www.naver.com/")

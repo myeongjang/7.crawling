@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- 
+    1. 1line은 html의 스펙중에 s버전 사용을 의미 : htmls
+    2. tag들은 정형화된 표현
+        예> h1 - header 즉 제목 표현
+    3. 이 tag들에 대한 스펙 제시
+        - w3(wwww) 제시 
+            https://www.w3.org/
+            : 학습 도우미
+                 http://www.w3schools.com
+
+        - 개발자가 개발, 브라우저 내부의 html 인터프리터가 해석 및 실행
+    4. html5
+        - html은 단순 구조의 tag뿐이었으나 html5 되면서
+            동적 기능 처리 가능한 구조로 변환
+        - html5(html + css)
+            : 예시 - 플래시(포토샵) 실행시 브라우저에 plug in 설치했어야 함
+                    plug in 설치 없이도 플래시와 같은 동적 구성이 가능
+            : 클래시 라이센스 - 어돕브....
+            : 구글 + 애플이 html5를 표준화 시키기 위한 노력
+                - 2014년 표준화
+            : html5 -> html
+    5. 정리
+        1. html : 브라우저의 구조를 표현하는 tag 기반의 언어
+        2. css : 브라우저 스타일 적용 언어
+        3. java script : 브라우저 동적 화면 구성
+
+        4. html5
+            - html + css + java script 혼용된 구조
+
+    6. HTML과 XML 동적 제어
+        1. html/xml 구조 - tree 구조 
+        2. 특정 tag 검색
+            - 족보 즉 tree 구조상에서 순차적으로 .(접근자)로 검색
+            - 문서를 순환해서 특정 tag 등 검색
+        3. DOM 
+            - Document Object Model
+            - 검색 및 동적 편집을 가능하게 하는 스펙
+            - 해킹 기술의 필수, UI 처리 기술의 필수
+            - html과 xml에서 tag(element)와 속성, text들을 다 객체 단위로 간주
+        4. DOM은 모든 프로그램 언어가 지원하는 스펙
+            - w3에서 제시한 권장 스펙
+            - 함수 제공
+-->
+<html lang="ko">
+    <head>
+    </head>
+    
+    <body>
+        <a href="https://www.daum.net/" target="blank">다음 - </a><br>
+
+        <h3>버튼 클릭시에 자바스크립트 함수 호출</h3>
+        <button>버튼 1</button><br>
+
+        <!-- 버튼 2 클릭시 "현서" 이름 팝업 출력
+        alert() : 팝업되는 java script의 내장 함수
+        onclick 속성 : client가 html -->
+
+        <button onclick="alert('현서')">버튼 2</button><br>
+        <!-- 버튼 3 클릭시 "주말" html body에 출력-->
+        <button>버튼 3</button><br>
+        <hr>
+        <div id="one"></div>
+        왜 매일 늦어?<br>
+        <div id="two"></div>
+
+        <!-- 사용자 정의 자바스크립트 개발해 보기
+        1. html tag 내부에 <script> 라는 tag 영역에 개발
+        2.사용자 정의 함수 개발도 가능 
+        3. 변수, 함수, 배열타입....
+        -->
+        <script>
+            //단일 라인 주석
+            //사용자 정의 함수 개발
+            function myFun(){
+                //id='one' 인 tag에 데이터 출력
+                /*document : html 문서의 상위 객체
+                             하위 자식들 제어가 가능
+                  getElementById() : id 값으로 elementfmf rjator
+                  innerText : div와 p tag 등에 한해서만 사용하는 속성
+                              div 하위에 데이터 적용식 사용
+                              모든 표기를 순수 문자열로 간주
+                  innerHTML : tag형태의 문자들은 html tag로 처리
+                */
+                document.getElementById("one").innerHTML='<b>지금은 어디쯤?<b>';
+            }
+        </script>
+    </body>
+
+</html>
