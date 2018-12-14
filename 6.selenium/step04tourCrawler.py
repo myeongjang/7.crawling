@@ -117,7 +117,8 @@ for page in range(1, 2):
             print("평점=", proJumsu)
             print("=" * 100)
     except Exception as e:
-        print("페이지 파싱 에러", e)
+       
+     print("페이지 파싱 에러", e)
     '''   
     finally:
         time.sleep(3)
